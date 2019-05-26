@@ -6,13 +6,12 @@ namespace LuxOpenSpace.Encontro1.Application
     {
         static void Main(string[] args)
         {
-            var l = new Pessoa();
-            var retorno = "";
-            l.cpf = "123456789-12";
-            l.nome = "José Fernando";
-            l.telefone = "123456789";
-            retorno = l.Salvar();
-            Console.WriteLine(retorno);
+            var novaPessoa = new Pessoa();
+            novaPessoa.Cpf = "123456789-12";
+            novaPessoa.Nome = "José Fernando";
+            novaPessoa.Telefone = "123456789";
+            string resultadoCadastro = novaPessoa.Salvar();
+            Console.WriteLine(resultadoCadastro);
         }
     }
 }
